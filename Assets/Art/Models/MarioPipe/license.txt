@@ -1,0 +1,11 @@
+Model Information:
+* title:	Nintendo 64 - Super Mario 64 - Warp Pipe
+* source:	https://sketchfab.com/3d-models/nintendo-64-super-mario-64-warp-pipe-f0e5be9f20f8444db41ea32ec053425e
+* author:	kylewithem (https://sketchfab.com/kylewithem)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Nintendo 64 - Super Mario 64 - Warp Pipe" (https://sketchfab.com/3d-models/nintendo-64-super-mario-64-warp-pipe-f0e5be9f20f8444db41ea32ec053425e) by kylewithem (https://sketchfab.com/kylewithem) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
