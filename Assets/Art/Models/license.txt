@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mario Pack - Low Poly
+* source:	https://sketchfab.com/3d-models/mario-pack-low-poly-4cdb49645a954e6fadbb108fbed33649
+* author:	Islide (https://sketchfab.com/Islide)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mario Pack - Low Poly" (https://sketchfab.com/3d-models/mario-pack-low-poly-4cdb49645a954e6fadbb108fbed33649) by Islide (https://sketchfab.com/Islide) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
