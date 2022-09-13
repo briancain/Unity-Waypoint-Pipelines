@@ -640,6 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed78eba9e7e64a418f7e8f9eb2fdf41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pipe: {fileID: 3614050817304081041}
   waypoint: {fileID: 2144042766}
   questionBlock: {fileID: 3614050817214846189}
   star: {fileID: 348712516}
@@ -878,7 +879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3009357812925623931, guid: d98243d98c0644ca3a6746a2670c6818, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -903,6 +904,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3677314004897980097, guid: 9ccc27152fc21453c81b4aed8a169225, type: 3}
   m_PrefabInstance: {fileID: 85499722127526444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3614050817304081041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2335711160758603961, guid: 78af080749a754816917cd5ad9963535, type: 3}
+  m_PrefabInstance: {fileID: 1318900468775133736}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &3688671950497567097
 Transform:

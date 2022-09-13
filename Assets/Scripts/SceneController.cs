@@ -11,17 +11,24 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour {
     [SerializeField]
+    GameObject pipe;
+    private bool showPipe = false;
+
+    [SerializeField]
     GameObject waypoint;
+    private bool showWaypoint = false;
 
     [SerializeField]
     GameObject questionBlock;
+    private bool showQuestionBlock = false;
 
     [SerializeField]
     GameObject star;
+    private bool showStar = false;
 
     // Start is called before the first frame update
     void Start() {
-      //waypoint.SetActive(false);
+      waypoint.SetActive(false);
       questionBlock.SetActive(false);
       star.SetActive(false);
     }
@@ -30,6 +37,32 @@ public class SceneController : MonoBehaviour {
     void Update() {
       if (Input.GetKeyDown(KeyCode.Space)) {
         Debug.Log("Space was pressed!");
+        // Use this as a linear bool state machine to trigger animations
+        if (!showPipe) {
+          showPipe = true;
+          showWaypoint = true;
+          Debug.Log("Starting pipe animation...");
+        } else if (showWaypoint) {
+          waypoint.SetActive(true);
+          showWaypoint = false;
+          showStar = true;
+
+          Debug.Log("Starting waypoint animation...");
+        } else if (showStar) {
+          waypoint.SetActive(false);
+          star.SetActive(true);
+
+          showQuestionBlock = true;
+          showStar = false;
+
+          Debug.Log("Starting Star animation...");
+        } else if (showQuestionBlock) {
+          star.SetActive(false);
+          questionBlock.SetActive(true);
+
+          showQuestionBlock = false;
+          Debug.Log("Starting Question Block animation...");
+        }
       }
     }
 }
