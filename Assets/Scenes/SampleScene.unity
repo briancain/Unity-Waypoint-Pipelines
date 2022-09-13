@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarioStar
       objectReference: {fileID: 0}
+    - target: {fileID: -5609321221556402741, guid: 3b585dabc8e56453db65e53f51444888, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1185642909401712793, guid: 3b585dabc8e56453db65e53f51444888, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -636,6 +640,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed78eba9e7e64a418f7e8f9eb2fdf41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypoint: {fileID: 2144042766}
+  questionBlock: {fileID: 3614050817214846189}
+  star: {fileID: 348712516}
+--- !u!1 &2144042766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009357812925623931, guid: d98243d98c0644ca3a6746a2670c6818, type: 3}
+  m_PrefabInstance: {fileID: 3009357814489485685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &85499722127526444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -866,7 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3009357812925623931, guid: d98243d98c0644ca3a6746a2670c6818, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
