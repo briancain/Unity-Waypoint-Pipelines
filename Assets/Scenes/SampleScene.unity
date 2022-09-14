@@ -1189,17 +1189,17 @@ MonoBehaviour:
 
 
 
-    - Moves Beyond
-    Implicit ''waypoint up'' Pipeline
+    - Custom
+    Pipelines move beyond implicit ''waypoint up'' Pipeline
 
-    - Users define multi-step deployment workflows
-    across environments
+    - Users can define
+    multi-step deployment workflows across environments
 
-    - Build an artifact once and promote it across environments
+    - Build an artifact
+    once and promote it across environments
 
-    -
-    ''Exec'' Steps for custom script execution like running app tests or security
-    scanning the built artifact'
+    - Incldues ''Exec'' Step for custom
+    script execution like running app tests or security scanning the built artifact'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -180.29987, z: -4.4316406, w: -315.1353}
+  m_margin: {x: 12.065308, y: -180.29987, z: 10.057373, w: -315.1353}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
