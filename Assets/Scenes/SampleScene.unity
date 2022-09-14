@@ -1875,6 +1875,8 @@ MonoBehaviour:
   waypoint: {fileID: 2144042766}
   questionBlock: {fileID: 3614050817214846189}
   star: {fileID: 348712516}
+  textbg: {fileID: 1953991777}
+  textBox: {fileID: 1121718708}
   oneUpClip: {fileID: 8300000, guid: bc8fbaee6ef69464e8515f581f213fdd, type: 3}
   coinClip: {fileID: 8300000, guid: cc21172817ab8428fa3fba1d626b4d5b, type: 3}
   pipeDown: {fileID: 8300000, guid: cbb821b2f11a140068f9278ee576f39f, type: 3}

@@ -29,9 +29,17 @@ public class SceneController : MonoBehaviour {
     GameObject star;
     private bool showStar = false;
 
+    // UI
+    [Header("UI Objects")]
+    [SerializeField]
+    GameObject textbg;
+    [SerializeField]
+    GameObject textBox;
+
     // Audio
-    [Header("Audio Files")]
     private AudioSource audioSource;
+
+    [Header("Audio Files")]
     [SerializeField]
     private AudioClip oneUpClip;
     [SerializeField]
