@@ -1036,6 +1036,8 @@ MonoBehaviour:
   coinClip: {fileID: 8300000, guid: cc21172817ab8428fa3fba1d626b4d5b, type: 3}
   pipeDown: {fileID: 8300000, guid: cbb821b2f11a140068f9278ee576f39f, type: 3}
   pipeUp: {fileID: 8300000, guid: 7e608531fc3c84b909b93a36a3871b3b, type: 3}
+  powerMeterRefillClip: {fileID: 8300000, guid: 1aa667867b4d741dca2a9e9476df5160, type: 3}
+  highscoreClip: {fileID: 8300000, guid: 9e6d667d206414a749734496eeb12946, type: 3}
 --- !u!82 &2006317252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1151,7 +1153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3677314004897980097, guid: 9ccc27152fc21453c81b4aed8a169225, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5063011671050590649, guid: 9ccc27152fc21453c81b4aed8a169225, type: 3}
       propertyPath: m_RootOrder
@@ -1163,7 +1165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5063011671050590649, guid: 9ccc27152fc21453c81b4aed8a169225, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.71
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 5063011671050590649, guid: 9ccc27152fc21453c81b4aed8a169225, type: 3}
       propertyPath: m_LocalPosition.z

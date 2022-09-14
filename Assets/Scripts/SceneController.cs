@@ -23,6 +23,7 @@ public class SceneController : MonoBehaviour {
     [SerializeField]
     GameObject questionBlock;
     private bool showQuestionBlock = false;
+    private bool deployBlock = false;
 
     [SerializeField]
     GameObject star;
@@ -78,6 +79,7 @@ public class SceneController : MonoBehaviour {
         } else if (showStar) {
           waypoint.SetActive(false);
           star.SetActive(true);
+          audioSource.PlayOneShot(powerMeterRefillClip, 1f);
 
           showQuestionBlock = true;
           showStar = false;
@@ -91,11 +93,16 @@ public class SceneController : MonoBehaviour {
           //star.SetActive(false);
           questionBlock.SetActive(true);
           Animator blockAnim = questionBlock.GetComponent<Animator>();
-          StartCoroutine(Utilities.DoAfter(2f, ()=>blockAnim.SetTrigger("Rise")));
-          StartCoroutine(Utilities.DoAfter(2f, ()=>audioSource.PlayOneShot(coinClip, 1f)));
+          StartCoroutine(Utilities.DoAfter(1.5f, ()=>blockAnim.SetTrigger("Rise")));
+          StartCoroutine(Utilities.DoAfter(2.25f, ()=>audioSource.PlayOneShot(coinClip, 1f)));
 
           showQuestionBlock = false;
           Debug.Log("Starting Question Block animation...");
+          deployBlock = true;
+        } else if (deployBlock) {
+          Animator anim = questionBlock.GetComponent<Animator>();
+          anim.SetTrigger("Deploy");
+          audioSource.PlayOneShot(pipeDown, 1f);
         }
       }
     }
