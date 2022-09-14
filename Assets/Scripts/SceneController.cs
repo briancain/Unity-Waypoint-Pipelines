@@ -2,13 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// The Idea:
-// Have the pipe come out from under the ground
-// On space bar:
-// - Have waypoint logo come up and spin
-// - Make waypoint logo disappear and Question Block Shows up and spins
-// - Block disappears, then Star shows up
-
 public class SceneController : MonoBehaviour {
     // Game Objects
     [Header("Game Objects")]
