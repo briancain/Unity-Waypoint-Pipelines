@@ -35,16 +35,27 @@ public class SceneController : MonoBehaviour {
     GameObject textbg;
     [SerializeField]
     GameObject textBox;
+    private bool showTextBox = false;
+
     [SerializeField]
     GameObject pipelineUp;
+    private bool showPipeUp = false;
+
     [SerializeField]
     GameObject pipelineWs;
+    private bool showPipeWs = false;
+
     [SerializeField]
     GameObject pipelineExec;
+    private bool showPipeExec = false;
+
     [SerializeField]
     GameObject depUI;
+    private bool showDepUI = false;
+
     [SerializeField]
     GameObject pipeRunUI;
+    private bool showRunUI = false;
 
     // Audio
     private AudioSource audioSource;
@@ -83,13 +94,45 @@ public class SceneController : MonoBehaviour {
       if (Input.GetKeyDown(KeyCode.Space)) {
         if (deployAnim) {
           Deploy();
-        } else if (sideshowAnim) {
+        } else if (slideshowAnim) {
           Slideshow();
         }
       }
     }
 
     void Slideshow() {
+      if (!showTextBox) {
+        showTextBox = true;
+        textBox.SetActive(true);
+        textbg.SetActive(true);
+
+        showPipeUp = true;
+      } else if (showPipeUp) {
+        pipelineUp.SetActive(true);
+        showPipeUp = false;
+        showPipeWs = true;
+      } else if (showPipeWs) {
+        pipelineUp.SetActive(false);
+        pipelineWs.SetActive(true);
+        showPipeWs = false;
+        showPipeExec = true;
+      } else if (showPipeExec) {
+        pipelineWs.SetActive(false);
+        pipelineExec.SetActive(true);
+        showPipeExec = false;
+        showDepUI = true;
+      } else if (showDepUI) {
+        pipelineExec.SetActive(false);
+        depUI.SetActive(true);
+        showDepUI = false;
+        showRunUI = true;
+      } else if (showRunUI) {
+        depUI.SetActive(false);
+        pipeRunUI.SetActive(true);
+        showRunUI = false;
+      } else {
+        pipeRunUI.SetActive(false);
+      }
     }
 
     void Deploy() {
@@ -146,7 +189,7 @@ public class SceneController : MonoBehaviour {
         textBox.SetActive(true);
 
         deployAnim = false;
-        slowshowAnim = true;
+        slideshowAnim = true;
       }
     }
 }
