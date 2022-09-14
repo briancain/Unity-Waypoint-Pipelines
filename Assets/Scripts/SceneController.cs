@@ -35,6 +35,16 @@ public class SceneController : MonoBehaviour {
     GameObject textbg;
     [SerializeField]
     GameObject textBox;
+    [SerializeField]
+    GameObject pipelineUp;
+    [SerializeField]
+    GameObject pipelineWs;
+    [SerializeField]
+    GameObject pipelineExec;
+    [SerializeField]
+    GameObject depUI;
+    [SerializeField]
+    GameObject pipeRunUI;
 
     // Audio
     private AudioSource audioSource;
@@ -54,7 +64,10 @@ public class SceneController : MonoBehaviour {
     private AudioClip highscoreClip;
 
     // Internal
+    // deploy first
     private bool deployAnim = true;
+    // slideshow second
+    private bool slideshowAnim = false;
 
     // Start is called before the first frame update
     void Start() {
@@ -70,8 +83,13 @@ public class SceneController : MonoBehaviour {
       if (Input.GetKeyDown(KeyCode.Space)) {
         if (deployAnim) {
           Deploy();
+        } else if (sideshowAnim) {
+          Slideshow();
         }
       }
+    }
+
+    void Slideshow() {
     }
 
     void Deploy() {
@@ -128,6 +146,7 @@ public class SceneController : MonoBehaviour {
         textBox.SetActive(true);
 
         deployAnim = false;
+        slowshowAnim = true;
       }
     }
 }

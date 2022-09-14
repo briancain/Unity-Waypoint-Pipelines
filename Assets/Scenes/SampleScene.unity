@@ -1579,6 +1579,7 @@ RectTransform:
   - {fileID: 1953991778}
   - {fileID: 1121718709}
   - {fileID: 2114573821}
+  - {fileID: 2085916640}
   - {fileID: 1602590095}
   - {fileID: 728163196}
   - {fileID: 993739107}
@@ -1877,6 +1878,11 @@ MonoBehaviour:
   star: {fileID: 348712516}
   textbg: {fileID: 1953991777}
   textBox: {fileID: 1121718708}
+  pipelineUp: {fileID: 2114573820}
+  pipelineWs: {fileID: 2085916639}
+  pipelineExec: {fileID: 1602590094}
+  depUI: {fileID: 728163195}
+  pipeRunUI: {fileID: 993739106}
   oneUpClip: {fileID: 8300000, guid: bc8fbaee6ef69464e8515f581f213fdd, type: 3}
   coinClip: {fileID: 8300000, guid: cc21172817ab8428fa3fba1d626b4d5b, type: 3}
   pipeDown: {fileID: 8300000, guid: cbb821b2f11a140068f9278ee576f39f, type: 3}
@@ -1979,6 +1985,82 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2085916639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2085916640}
+  - component: {fileID: 2085916642}
+  - component: {fileID: 2085916641}
+  m_Layer: 5
+  m_Name: PipelineWorkspace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2085916640
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085916639}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.69, y: 9.42, z: 8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1736852611}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2085916641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085916639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0d31e103f4cbc4c238c115ca8b267432, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2085916642
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085916639}
+  m_CullTransparentMesh: 1
 --- !u!1 &2114573820
 GameObject:
   m_ObjectHideFlags: 0
