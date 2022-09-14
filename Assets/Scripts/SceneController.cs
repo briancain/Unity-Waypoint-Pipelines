@@ -79,6 +79,7 @@ public class SceneController : MonoBehaviour {
     private bool deployAnim = true;
     // slideshow second
     private bool slideshowAnim = false;
+    private bool showSlide = true;
 
     // Start is called before the first frame update
     void Start() {
@@ -107,30 +108,47 @@ public class SceneController : MonoBehaviour {
         textbg.SetActive(true);
 
         showPipeUp = true;
-      } else if (showPipeUp) {
+        showSlide = true;
+      } else if (showPipeUp && showSlide) {
         pipelineUp.SetActive(true);
+
         showPipeUp = false;
         showPipeWs = true;
-      } else if (showPipeWs) {
+        showSlide = false;
+      } else if (showPipeWs && showSlide) {
         pipelineUp.SetActive(false);
         pipelineWs.SetActive(true);
         showPipeWs = false;
         showPipeExec = true;
-      } else if (showPipeExec) {
+        showSlide = false;
+      } else if (showPipeExec && showSlide) {
         pipelineWs.SetActive(false);
         pipelineExec.SetActive(true);
         showPipeExec = false;
         showDepUI = true;
-      } else if (showDepUI) {
+        showSlide = false;
+      } else if (showDepUI && showSlide) {
         pipelineExec.SetActive(false);
         depUI.SetActive(true);
         showDepUI = false;
         showRunUI = true;
-      } else if (showRunUI) {
+        showSlide = false;
+      } else if (showRunUI && showSlide) {
         depUI.SetActive(false);
         pipeRunUI.SetActive(true);
         showRunUI = false;
+        showSlide = false;
+      } else if (!showSlide) {
+        pipeRunUI.SetActive(false);
+        pipelineUp.SetActive(false);
+        pipelineWs.SetActive(false);
+        pipelineExec.SetActive(false);
+        depUI.SetActive(false);
+        pipeRunUI.SetActive(false);
+
+        showSlide = true;
       } else {
+        showSlide = true;
         pipeRunUI.SetActive(false);
       }
     }
