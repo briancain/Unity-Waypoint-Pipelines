@@ -1184,16 +1184,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Available as a Tech Preview
 
-    in Waypoint v0.10.0
+    in Waypoint v0.10.0 and HCP Beta.
 
 
 
 
-    - Custom
-    Pipelines move beyond implicit ''waypoint up'' Pipeline
+    -
+    Custom Pipelines move beyond implicit ''waypoint up'' Pipeline
 
-    - Users can define
-    multi-step deployment workflows across environments
+    - Users can
+    define multi-step deployment workflows across environments
 
     - Build an artifact
     once and promote it across environments
