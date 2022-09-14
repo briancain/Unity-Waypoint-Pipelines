@@ -10,6 +10,8 @@ using UnityEngine;
 // - Block disappears, then Star shows up
 
 public class SceneController : MonoBehaviour {
+    // Game Objects
+    [Header("Game Objects")]
     [SerializeField]
     GameObject pipe;
     private bool showPipe = false;
@@ -26,8 +28,22 @@ public class SceneController : MonoBehaviour {
     GameObject star;
     private bool showStar = false;
 
+    // Audio
+    [Header("Audio Files")]
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip oneUpClip;
+    [SerializeField]
+    private AudioClip coinClip;
+    [SerializeField]
+    private AudioClip pipeDown;
+    [SerializeField]
+    private AudioClip pipeUp;
+
     // Start is called before the first frame update
     void Start() {
+      audioSource = GetComponent<AudioSource>();
+
       waypoint.SetActive(false);
       questionBlock.SetActive(false);
       star.SetActive(false);
