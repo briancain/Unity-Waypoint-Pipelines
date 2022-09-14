@@ -1141,7 +1141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1121718709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1198,7 +1198,7 @@ MonoBehaviour:
     - Build an artifact
     once and promote it across environments
 
-    - Incldues ''Exec'' Step for custom
+    - Includes ''Exec'' Step for custom
     script execution like running app tests or security scanning the built artifact'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1691,7 +1691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1953991778
 RectTransform:
   m_ObjectHideFlags: 0

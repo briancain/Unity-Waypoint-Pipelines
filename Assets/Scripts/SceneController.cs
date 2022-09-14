@@ -120,6 +120,14 @@ public class SceneController : MonoBehaviour {
         Animator anim = questionBlock.GetComponent<Animator>();
         anim.SetTrigger("Deploy");
         audioSource.PlayOneShot(pipeDown, 1f);
+        deployBlock = false;
+      } else {
+        // final state
+        waypoint.SetActive(true);
+        textbg.SetActive(true);
+        textBox.SetActive(true);
+
+        deployAnim = false;
       }
     }
 }
